@@ -13,7 +13,7 @@ return call_user_func( function(){
 	// project
 
 	/** サイト名 */
-	$conf->name = 'Get start "Pickles 2" !';
+	$conf->name = 'Pickles 2 Paprika Slim';
 
 	/** コピーライト表記 */
 	$conf->copyright = 'Pickles 2 Project';
@@ -23,7 +23,7 @@ return call_user_func( function(){
 	 * 本番環境のスキーマ
 	 * (例: http, https)
 	 */
-	$conf->scheme = 'http';
+	$conf->scheme = 'https';
 
 	/**
 	 * ドメイン
@@ -42,7 +42,7 @@ return call_user_func( function(){
 	$conf->path_top = '/';
 
 	/** パブリッシュ先ディレクトリパス */
-	$conf->path_publish_dir = './px-files/dist/';
+	$conf->path_publish_dir = '../px-files/';
 
 	/** 公開キャッシュディレクトリ */
 	$conf->public_cache_dir = '/common/px_resources/';
@@ -295,7 +295,7 @@ return call_user_func( function(){
 		'theme'=>'tomk79\pickles2\multitheme\theme::exec('.json_encode(array(
 			'param_theme_switch'=>'THEME',
 			'cookie_theme_switch'=>'THEME',
-			'path_theme_collection'=>'./px-files/themes/',
+			'path_theme_collection'=>'../px-files/themes/',
 			'attr_bowl_name_by'=>'data-contents-area',
 			'default_theme_id' => 'gui_sample',
 		)).')' ,
@@ -405,7 +405,7 @@ return call_user_func( function(){
 	);
 
 	/** プロジェクト固有のモジュールセットの格納ディレクトリ */
-	$conf->plugins->px2dt->path_module_templates_dir = "./px-files/modules/";
+	$conf->plugins->px2dt->path_module_templates_dir = "../px-files/modules/";
 
 	/** コンテンツエリアを識別するセレクタ(複数の要素がマッチしてもよい) */
 	$conf->plugins->px2dt->contents_area_selector = '[data-contents-area]';

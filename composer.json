@@ -1,4 +1,6 @@
 {
+    "name": "tomk79/preset-pickles2-paprika-slim",
+    "description": "preset - pickles2-paprika-slim",
     "keywords": [
         "pickles2"
     ],
@@ -26,10 +28,8 @@
         "px2package": {
             "name": "preset - pickles2-paprika-slim",
             "type": "project",
-            "path": ".px_execute.php",
+            "path": "src_px2/.px_execute.php",
             "path_homedir": "px-files/"
         }
-    },
-    "name": "tomk79/preset-pickles2-paprika-slim",
-    "description": "preset - pickles2-paprika-slim"
+    }
 }
