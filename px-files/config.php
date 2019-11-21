@@ -137,6 +137,9 @@ return call_user_func( function(){
 		'*/.git/*' => 'ignore' ,
 		'*/.gitignore' => 'ignore' ,
 
+		'/paprika-files/*' => 'pass', // <- for Paprika Framework
+		'*.php' => 'php', // <- for Paprika Framework
+
 		'*.html' => 'html' ,
 		'*.htm' => 'html' ,
 		'*.css' => 'css' ,
@@ -162,6 +165,7 @@ return call_user_func( function(){
 	$conf->paths_enable_sitemap = array(
 		'*.html',
 		'*.htm',
+		'*.php', // <- for Paprika Framework
 	);
 
 
@@ -260,6 +264,16 @@ return call_user_func( function(){
 	 * サイトマップ読み込みの後、コンテンツ実行の前に実行するプラグインを設定します。
 	 */
 	$conf->funcs->before_content = array(
+		// Paprika - PHPアプリケーションフレームワーク
+		// before_content の先頭に設定してください。
+		'picklesFramework2\paprikaFramework\main::before_content('.json_encode( array(
+			// アプリケーションが動的に生成したコンテンツエリアの名称
+			'bowls'=>array('custom_area_1', 'custom_area_2', ),
+
+			// Paprika を適用する拡張子の一覧
+			'exts' => array('php'),
+		) ).')' ,
+
 		// PX=api
 		'picklesFramework2\commands\api::register' ,
 
@@ -334,6 +348,14 @@ return call_user_func( function(){
 	$conf->funcs->processor->md = array(
 		// Markdown文法を処理する
 		'picklesFramework2\processors\md\ext::exec' ,
+
+		// html のデフォルトの処理を追加
+		$conf->funcs->processor->html ,
+	);
+
+	$conf->funcs->processor->php = array(
+		// Paprika - PHPアプリケーションフレームワーク
+		'picklesFramework2\paprikaFramework\main::processor' ,
 
 		// html のデフォルトの処理を追加
 		$conf->funcs->processor->html ,

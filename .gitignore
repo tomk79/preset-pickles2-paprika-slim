@@ -12,3 +12,5 @@ px-files/_sys/ram/
 !px-files/_sys/ram/publish/.gitkeep
 src_px2/common/px_resources/
 !src_px2/common/px_resources/.gitkeep
+dist/paprika-files/config_local.php
+src_px2/paprika-files/config_local.php

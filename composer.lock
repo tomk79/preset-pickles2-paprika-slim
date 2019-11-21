@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b70ad95713b335bf61d9a3c0a1ac5102",
+    "content-hash": "c5067806428060ecf0af2994a82fd9a3",
     "packages": [
         {
             "name": "broccoli-html-editor/broccoli-field-table",
@@ -554,6 +554,60 @@
                 "pickles2"
             ],
             "time": "2018-08-22T13:50:55+00:00"
+        },
+        {
+            "name": "pickles2/px2-paprika",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-paprika.git",
+                "reference": "5fa09cecafb5d419a05688828abc2196024fff98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/5fa09cecafb5d419a05688828abc2196024fff98",
+                "reference": "5fa09cecafb5d419a05688828abc2196024fff98",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "^1.0",
+                "tomk79/request": "^1.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.7.0",
+                "phpunit/phpunit": "^4.1.0",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-multitheme": "2.0.*",
+                "pickles2/px2-path-resolver": "2.0.*",
+                "pickles2/px2-publish-ex": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-remove-attr": "2.0.*",
+                "pickles2/px2-sitemapexcel": "2.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/fw/bowl.php",
+                    "php/fw/paprika.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Publishing Web Application with \"Pickles 2\".",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2019-11-21T00:39:14+00:00"
         },
         {
             "name": "pickles2/px2-path-resolver",
