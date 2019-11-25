@@ -137,6 +137,8 @@ return call_user_func( function(){
 		'*/.git/*' => 'ignore' ,
 		'*/.gitignore' => 'ignore' ,
 
+		'/paprika-files/bin/*.php' => 'php', // <- command line tools
+
 		'/paprika-files/*' => 'pass', // <- for Paprika Framework
 		'*.php' => 'php', // <- for Paprika Framework
 
