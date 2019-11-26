@@ -14,3 +14,5 @@ src_px2/common/px_resources/
 !src_px2/common/px_resources/.gitkeep
 dist/paprika-files/config_local.php
 src_px2/paprika-files/config_local.php
+dist/paprika-files/_database.sqlite
+src_px2/paprika-files/_database.sqlite

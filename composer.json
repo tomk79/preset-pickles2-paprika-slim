@@ -19,7 +19,7 @@
         "tomk79/broccoli-module-interact": "^0.1",
         "tomk79/broccoli-module-medias": "^0.1",
         "tomk79/broccoli-module-lp": "^0.1",
-        "pickles2/px2-paprika": "^0.2.0"
+        "pickles2/px2-paprika": "dev-develop"
     },
     "require-dev": {},
     "autoload": {
