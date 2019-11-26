@@ -137,8 +137,7 @@ return call_user_func( function(){
 		'*/.git/*' => 'ignore' ,
 		'*/.gitignore' => 'ignore' ,
 
-		'/paprika-files/bin/*.php' => 'php', // <- command line tools
-
+		'/paprika-files/bin/*.php' => 'php', // <- for Paprika Framework
 		'/paprika-files/*' => 'pass', // <- for Paprika Framework
 		'*.php' => 'php', // <- for Paprika Framework
 
@@ -455,6 +454,12 @@ return call_user_func( function(){
 			'label'=>'すべて(commonを除く)',
 			'paths_region'=> array('/'),
 			'paths_ignore'=> array('/common/'),
+			'keep_cache'=>false
+		),
+		array(
+			'label'=>'すべて(vendorを除く)',
+			'paths_region'=> array('/'),
+			'paths_ignore'=> array('/vendor/'),
 			'keep_cache'=>false
 		),
 	);

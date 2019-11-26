@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>さまざまな機能 | Pickles 2 Paprika Slim</title>
-		<meta name="description" content="Pickles 2 のさまざまな機能をご紹介します。" />
+		<title>AJAX on Paprika | Pickles 2 Paprika Slim</title>
+		<meta name="description" content="PHPコードでHTMLを生成するサンプルです。" />
 		<meta name="keywords" content="実装サンプル, 機能紹介" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -33,21 +33,45 @@
 <div class="theme-layouts theme-layouts--rnavi">
 	<div class="theme-layouts__body">
 		<div class="theme-layouts__content">
-<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><span>さまざまな機能</span></li></ul></div>
-<h1>さまざまな機能</h1>
+<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><span>AJAX on Paprika</span></li></ul></div>
+<h1>AJAX on Paprika</h1>
 
 <div class="contents">
-<p>このカテゴリでは、Pickles 2 が持っている様々な機能の一部をサンプルとして実装しています。</p>
-<p>ここで紹介できること以外にも、まだまだ機能やプラグインがたくさんあります。
-これらを参考に、よりよいサイト制作環境を構築してみてください。</p>
+<p>AJAX通信する方法は、最もシンプルで直感的な実装方法です。</p>
+
+<p>ページの内容を記述するコンテンツファイルとは別に、 <code>*.php</code> 拡張子のAPIプログラムを用意し、これとAJAX通信をして、クライアントサイドJavaScriptで画面の表示を更新する方法です。</p>
+
+<p>この方法では、 コンテンツのHTMLは静的に出力されます。 <code>*.php</code> のAPIプログラムは、プレビュー環境でもパブリッシュ先でも動的に実行されます。 グローバル空間に <code>$paprika</code> が存在するように環境が整えられます。</p>
+
+<p>次の例は、 API <a href="/sample_pages/samples/ajax_paprika_files/apis/sample.php" target="_blank">sample.php</a> から取得したJSONの内容を表示したものです。</p>
+
+<script type="text/javascript">
+$(window).on('load', function(e){
+    $.ajax({
+        'url': './ajax_paprika_files/apis/sample.php',
+        'success': function(data, dataType){
+            console.log(data, dataType);
+            $('.cont-sample').append("DOCUMENT_ROOT: "+data._SERVER.DOCUMENT_ROOT);
+        },
+        'error': function(XMLHttpRequest, textStatus, errorThrown){
+            console.error(XMLHttpRequest, textStatus, errorThrown);
+        },
+        'complete': function(XMLHttpRequest, textStatus){
+            console.log(XMLHttpRequest, textStatus);
+        }
+    });
+})
+</script>
+
+<div class="cont-sample"></div>
 </div>
-<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><span>さまざまな機能</span></li></ul></div>
+<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><span>AJAX on Paprika</span></li></ul></div>
 		</div>
 		<div class="theme-layouts__rnavi">
 <nav class="theme-common-navi">
 	<p><a href="/sample_pages/samples/">さまざまな機能</a></p>
 <ul>
-<li><a href="/sample_pages/samples/ajax_paprika.html">AJAX on Paprika</a></li>
+<li><a href="/sample_pages/samples/ajax_paprika.html" class="current">AJAX on Paprika</a></li>
 <li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
 <li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
 <li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
@@ -84,7 +108,7 @@
 </ul>
 </li>
 <li><a href="/sample_pages/samples/" class="current">さまざまな機能</a><ul>
-<li><a href="/sample_pages/samples/ajax_paprika.html">AJAX on Paprika</a></li>
+<li><a href="/sample_pages/samples/ajax_paprika.html" class="current">AJAX on Paprika</a></li>
 <li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
 <li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
 <li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>

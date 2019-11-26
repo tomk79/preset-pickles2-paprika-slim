@@ -24,7 +24,7 @@ $ php dist/paprika-files/bin/migrate.php
 On preview:
 
 ```
-* * * * * apache cd /path/to/project && php src_px2/.px_execute.php /paprika-files/bin/schedule.php >> /dev/null 2>&1
+* * * * * apache cd /path/to/project && php src_px2/.px_execute.php -u "Mozilla" /paprika-files/bin/schedule.php >> /dev/null 2>&1
 ```
 
 On production:
