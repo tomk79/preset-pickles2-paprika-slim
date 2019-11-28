@@ -6,17 +6,25 @@
 class mainTest extends PHPUnit_Framework_TestCase{
 
 	/**
-	 * setup
+	 * setUp
 	 */
-	public function setup(){
+	public function setUp(){
 		$this->fs = new \tomk79\filesystem();
+
+		require_once(__DIR__.'/helper/builtinserver.php');
+		start_builtin_server();
+	}
+
+	/**
+	 * tearDown
+	 */
+	public function tearDown(){
 	}
 
 	/**
 	 * プレビュー表示時のテスト
 	 */
-	public function testMain(){
-
+	public function testPublish(){
 		// Pickles 2 パブリッシュを実行
 		$output = $this->passthru( [
 			'php',
@@ -29,7 +37,23 @@ class mainTest extends PHPUnit_Framework_TestCase{
 		// var_dump($indexHtml);
 		$this->assertTrue( !!preg_match('/\<title\>ホーム \| Pickles 2 Paprika Slim\<\/title\>/si', $indexHtml) );
 
+	}//testPublish()
+
+	/**
+	 * プレビュー表示時のテスト
+	 */
+	public function testMain(){
+
+		$client = new \GuzzleHttp\Client([
+			'base_uri' => 'http://'.WEB_SERVER_HOST.':'.WEB_SERVER_PORT.'/',
+			'timeout'  => 2.0,
+		]);
+		$response = $client->get('/', []);
+		$this->assertEquals($response->getStatusCode(), 200);
+		$this->assertTrue( !!preg_match('/\<title\>ホーム \| Pickles 2 Paprika Slim\<\/title\>/si', $response->getBody()) );
+
 	}//testMain()
+
 
 
 
