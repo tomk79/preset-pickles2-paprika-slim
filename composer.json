@@ -1,9 +1,17 @@
 {
     "name": "tomk79/preset-pickles2-paprika-slim",
     "description": "preset - pickles2-paprika-slim",
-    "keywords": [
-        "pickles2"
-    ],
+    "keywords": ["pickles2"],
+    "license": "MIT",
+    "type": "project",
+    "scripts":{
+        "start": [
+            "php -S 127.0.0.1:8088 -t ./dist/"
+        ],
+        "test": [
+            "php ./vendor/phpunit/phpunit/phpunit"
+        ]
+    } ,
     "repositories": [],
     "require": {
         "php": ">=5.4.0",
@@ -21,7 +29,15 @@
         "tomk79/broccoli-module-lp": "^0.1",
         "pickles2/px2-paprika": "dev-develop"
     },
-    "require-dev": {},
+    "require-dev": {
+        "phpunit/phpunit": "^4.1.0"
+    },
+    "config": {
+        "process-timeout": 0,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
     "autoload": {
         "files": []
     },
