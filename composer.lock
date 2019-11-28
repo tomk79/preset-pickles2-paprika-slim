@@ -749,12 +749,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-paprika.git",
-                "reference": "0ff75a25690f219c0178dfafeaaab3ccbc11c932"
+                "reference": "ec23a0d8f73c95b507c80c691ea6d505242762a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/0ff75a25690f219c0178dfafeaaab3ccbc11c932",
-                "reference": "0ff75a25690f219c0178dfafeaaab3ccbc11c932",
+                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/ec23a0d8f73c95b507c80c691ea6d505242762a1",
+                "reference": "ec23a0d8f73c95b507c80c691ea6d505242762a1",
                 "shasum": ""
             },
             "require": {
@@ -797,7 +797,7 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-11-28T06:05:06+00:00"
+            "time": "2019-11-28T14:21:58+00:00"
         },
         {
             "name": "pickles2/px2-path-resolver",
