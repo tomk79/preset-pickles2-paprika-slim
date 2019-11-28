@@ -561,12 +561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-paprika.git",
-                "reference": "b7fe23595376758ba58bf8a003649047750b21b3"
+                "reference": "89954d44422114bc4e81dafeb2cefe696dae7b10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/b7fe23595376758ba58bf8a003649047750b21b3",
-                "reference": "b7fe23595376758ba58bf8a003649047750b21b3",
+                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/89954d44422114bc4e81dafeb2cefe696dae7b10",
+                "reference": "89954d44422114bc4e81dafeb2cefe696dae7b10",
                 "shasum": ""
             },
             "require": {
@@ -575,7 +575,8 @@
                 "tomk79/request": "^1.0"
             },
             "require-dev": {
-                "phpdocumentor/phpdocumentor": "^2.7.0",
+                "jms/serializer": "<1.8",
+                "phpdocumentor/phpdocumentor": "^2.9.0",
                 "phpunit/phpunit": "^4.1.0",
                 "pickles2/px-fw-2.x": "dev-develop",
                 "pickles2/px2-multitheme": "2.0.*",
@@ -590,6 +591,7 @@
                 "files": [
                     "php/main.php",
                     "php/fw/bowl.php",
+                    "php/fw/log.php",
                     "php/fw/paprika.php"
                 ]
             },
@@ -603,11 +605,11 @@
                     "email": "tomk79@gmail.com"
                 }
             ],
-            "description": "Publishing Web Application with \"Pickles 2\".",
+            "description": "Publishing Lightweight Web Application with \"Pickles 2\".",
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-11-26T03:08:28+00:00"
+            "time": "2019-11-28T04:08:48+00:00"
         },
         {
             "name": "pickles2/px2-path-resolver",
@@ -872,16 +874,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
-                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
                 "shasum": ""
             },
             "require": {
@@ -893,7 +895,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -926,7 +928,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "time": "2019-11-27T13:56:44+00:00"
         },
         {
             "name": "tomk79/broccoli-module-interact",

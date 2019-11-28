@@ -16,3 +16,5 @@ dist/paprika-files/config_local.php
 src_px2/paprika-files/config_local.php
 dist/paprika-files/_database.sqlite
 src_px2/paprika-files/_database.sqlite
+dist/paprika-files/logs/
+src_px2/paprika-files/logs/
