@@ -1,8 +1,8 @@
 @charset 'UTF-8';
-/**
- * module: interact:interactives/accordion
- */
 .contents {
+  /**
+   * module: interact:interactives/accordion
+   */
   /**
    * module: interact:interactives/carousel
    */
@@ -464,16 +464,16 @@
     margin: 0 0.5rem;
     box-sizing: border-box;
     width: calc(16.66% - 1rem); }
-  @media all and (max-width: 768px) {
+  @media (max-width: 768px) {
   .contents .px2-grid__col-1of5, .contents .px2-grid__col-2of5, .contents .px2-grid__col-3of5, .contents .px2-grid__col-4of5, .contents .px2-grid__col-1of6 {
     width: calc(33.33% - 1rem); } }
-  @media all and (max-width: 660px) {
+  @media (max-width: 660px) {
   .contents .px2-grid__col-1of4, .contents .px2-grid__col-3of4, .contents .px2-grid__col-1of5, .contents .px2-grid__col-2of5, .contents .px2-grid__col-3of5, .contents .px2-grid__col-4of5, .contents .px2-grid__col-1of6 {
     width: calc(50% - 1rem); } }
-  @media all and (max-width: 544px) {
+  @media (max-width: 544px) {
   .contents .px2-grid__col-1of3, .contents .px2-grid__col-2of3, .contents .px2-grid__col-1of4, .contents .px2-grid__col-3of4, .contents .px2-grid__col-1of5, .contents .px2-grid__col-2of5, .contents .px2-grid__col-3of5, .contents .px2-grid__col-4of5, .contents .px2-grid__col-1of6 {
     width: calc(50% - 1rem); } }
-  @media all and (max-width: 440px) {
+  @media (max-width: 440px) {
   .contents .px2-grid__col-1of2, .contents .px2-grid__col-1of3, .contents .px2-grid__col-2of3, .contents .px2-grid__col-1of4, .contents .px2-grid__col-3of4, .contents .px2-grid__col-1of5, .contents .px2-grid__col-2of5, .contents .px2-grid__col-3of5, .contents .px2-grid__col-4of5, .contents .px2-grid__col-1of6 {
     width: calc(100% - 1rem); } }
   .contents h2, .contents .px2-h2, .contents h3, .contents .px2-h3, .contents h4, .contents .px2-h4, .contents h5, .contents .px2-h5, .contents h6, .contents .px2-h6 {
@@ -541,22 +541,22 @@
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 0; }
-  .contents .px2-horizontal-list > ul > li, .contents .px2-horizontal-list > ul > ul > li, .contents .px2-horizontal-list > li, .contents .px2-horizontal-list > ul > li {
+  .contents .px2-horizontal-list > ul > li, .contents .px2-horizontal-list > ul > ul > li, .contents .px2-horizontal-list > li {
     list-style-type: none;
     padding-left: 0;
     padding-right: 1em; }
-  .contents .px2-horizontal-list > ul > li > p, .contents .px2-horizontal-list > ul > ul > li > p, .contents .px2-horizontal-list > li > p, .contents .px2-horizontal-list > ul > li > p {
+  .contents .px2-horizontal-list > ul > li > p, .contents .px2-horizontal-list > ul > ul > li > p, .contents .px2-horizontal-list > li > p {
     margin: 0; }
   .contents .px2-note-list, .contents .px2-note-list > ul {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 1.5em; }
-  .contents .px2-note-list > ul > li, .contents .px2-note-list > ul > ul > li, .contents .px2-note-list > li, .contents .px2-note-list > ul > li {
+  .contents .px2-note-list > ul > li, .contents .px2-note-list > ul > ul > li, .contents .px2-note-list > li {
     list-style-type: none;
     color: #999;
     font-size: 86%;
     position: relative; }
-  .contents .px2-note-list > ul > li::before, .contents .px2-note-list > ul > ul > li::before, .contents .px2-note-list > li::before, .contents .px2-note-list > ul > li::before {
+  .contents .px2-note-list > ul > li::before, .contents .px2-note-list > ul > ul > li::before, .contents .px2-note-list > li::before {
     content: "※";
     position: absolute;
     left: -1.5em; }
@@ -661,10 +661,10 @@
     overflow: hidden; }
   .contents .px2-float-media__body-rect *:first-child {
     margin-top: 0; }
-  @media all and (max-width: 544px) {
+  @media (max-width: 544px) {
   .contents .px2-float-media__r1of3, .contents .px2-float-media__c1of3, .contents .px2-float-media__l1of3, .contents .px2-float-media__r1of4, .contents .px2-float-media__c1of4, .contents .px2-float-media__l1of4 {
     width: 50%; } }
-  @media all and (max-width: 440px) {
+  @media (max-width: 440px) {
   .contents .px2-float-media__r2of3, .contents .px2-float-media__c2of3, .contents .px2-float-media__l2of3 {
     float: none;
     width: 100%;

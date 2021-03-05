@@ -8,25 +8,25 @@
     "packages": [
         {
             "name": "broccoli-html-editor/broccoli-field-table",
-            "version": "0.2.0",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/broccoli-html-editor/broccoli-field-table.git",
-                "reference": "168cdaba9a44cac916a33bf1fd415dc3df7aeec3"
+                "reference": "7aeb6757453f35bea2fbe95d1ca4528625773f7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-field-table/zipball/168cdaba9a44cac916a33bf1fd415dc3df7aeec3",
-                "reference": "168cdaba9a44cac916a33bf1fd415dc3df7aeec3",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-field-table/zipball/7aeb6757453f35bea2fbe95d1ca4528625773f7c",
+                "reference": "7aeb6757453f35bea2fbe95d1ca4528625773f7c",
                 "shasum": ""
             },
             "require": {
-                "leafo/scssphp": "^0.7.6",
-                "michelf/php-markdown": "^1.8",
+                "leafo/scssphp": "~0.7",
+                "michelf/php-markdown": "~1.8",
                 "php": ">=5.4.0",
-                "tomk79/filesystem": "^1.0",
-                "tomk79/php-excel2html": "^0.0.7",
-                "tomk79/request": "^1.0"
+                "tomk79/filesystem": "~1.0",
+                "tomk79/php-excel2html": "^0.0.8||~0.1",
+                "tomk79/request": "~1.0"
             },
             "require-dev": {
                 "broccoli-html-editor/broccoli-html-editor": "^0.3.0",
@@ -49,29 +49,35 @@
                     "email": "tomk79@gmail.com"
                 }
             ],
-            "time": "2018-07-27T03:42:30+00:00"
+            "support": {
+                "issues": "https://github.com/broccoli-html-editor/broccoli-field-table/issues",
+                "source": "https://github.com/broccoli-html-editor/broccoli-field-table/tree/0.2.3"
+            },
+            "time": "2020-12-09T16:46:05+00:00"
         },
         {
             "name": "broccoli-html-editor/broccoli-html-editor",
-            "version": "0.3.11",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/broccoli-html-editor/broccoli-html-editor.git",
-                "reference": "540c50ce1c970656bdd370e33c3bec40b4142590"
+                "reference": "46ade73c34fcd51513d495101dc0dabbd7d40a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/540c50ce1c970656bdd370e33c3bec40b4142590",
-                "reference": "540c50ce1c970656bdd370e33c3bec40b4142590",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/46ade73c34fcd51513d495101dc0dabbd7d40a73",
+                "reference": "46ade73c34fcd51513d495101dc0dabbd7d40a73",
                 "shasum": ""
             },
             "require": {
-                "leafo/scssphp": "^0.7.6",
-                "michelf/php-markdown": "^1.8",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "leafo/scssphp": ">=0.7.6",
+                "michelf/php-markdown": ">=1.8",
                 "php": ">=5.4.0",
                 "tomk79/filesystem": "^1.0",
-                "tomk79/langbank": "^0.0.3",
-                "twig/twig": "^1.35"
+                "tomk79/langbank": "^0.0.4",
+                "twig/twig": ">=1.35"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.1.0"
@@ -86,6 +92,7 @@
                     "php/buildModuleResources.php",
                     "php/buildBowl.php",
                     "php/gpi.php",
+                    "php/userStorage.php",
                     "fields/php/href.php",
                     "fields/php/html_attr_text.php",
                     "fields/php/html.php",
@@ -95,6 +102,10 @@
                     "fields/php/script.php",
                     "fields/php/select.php",
                     "fields/php/text.php",
+                    "fields/php/color.php",
+                    "fields/php/datetime.php",
+                    "php/fncs/readme.php",
+                    "php/helper/twig.php",
                     "php/simple_html_dom.php"
                 ]
             },
@@ -112,27 +123,32 @@
             "keywords": [
                 "broccoli-html-editor"
             ],
-            "time": "2019-11-16T04:05:25+00:00"
+            "support": {
+                "issues": "https://github.com/broccoli-html-editor/broccoli-html-editor/issues",
+                "source": "https://github.com/broccoli-html-editor/broccoli-html-editor/tree/0.4.0"
+            },
+            "time": "2021-02-06T04:04:27+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.4.1",
+            "version": "6.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0895c932405407fd3a7368b6910c09a24d26db11"
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0895c932405407fd3a7368b6910c09a24d26db11",
-                "reference": "0895c932405407fd3a7368b6910c09a24d26db11",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5"
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.17.0"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -145,7 +161,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -178,27 +194,31 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-10-23T15:58:00+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+            },
+            "time": "2020-06-16T21:01:06+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0"
+                "symfony/phpunit-bridge": "^4.4 || ^5.1"
             },
             "type": "library",
             "extra": {
@@ -229,20 +249,24 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20T10:07:11+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/1.4.0"
+            },
+            "time": "2020-09-30T07:37:28+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "shasum": ""
             },
             "require": {
@@ -255,15 +279,15 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -300,28 +324,34 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.7.0"
+            },
+            "time": "2020-09-30T07:37:11+00:00"
         },
         {
             "name": "leafo/scssphp",
-            "version": "v0.7.8",
+            "version": "v0.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "a384906af3d078e98b089d7d36f6ceab8703f7ff"
+                "reference": "b9cdea3e42c3bcb1a9faafd04ccce4e8ec860ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/a384906af3d078e98b089d7d36f6ceab8703f7ff",
-                "reference": "a384906af3d078e98b089d7d36f6ceab8703f7ff",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/b9cdea3e42c3bcb1a9faafd04ccce4e8ec860ad9",
+                "reference": "b9cdea3e42c3bcb1a9faafd04ccce4e8ec860ad9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": "^5.4.0 || ^7"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.6",
-                "squizlabs/php_codesniffer": "~2.5"
+                "squizlabs/php_codesniffer": "~2.5",
+                "twbs/bootstrap": "~4.3",
+                "zurb/foundation": "~6.5"
             },
             "bin": [
                 "bin/pscss"
@@ -352,24 +382,32 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2019-04-24T18:10:10+00:00"
+            "support": {
+                "issues": "https://github.com/leafo/scssphp/issues",
+                "source": "https://github.com/leafo/scssphp/tree/v0.8.4"
+            },
+            "abandoned": "scssphp/scssphp",
+            "time": "2019-06-18T21:15:44+00:00"
         },
         {
             "name": "michelf/php-markdown",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "01ab082b355bf188d907b9929cd99b2923053495"
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
-                "reference": "01ab082b355bf188d907b9929cd99b2923053495",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.3 <5.8"
             },
             "type": "library",
             "autoload": {
@@ -398,7 +436,11 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2018-01-15T00:49:33+00:00"
+            "support": {
+                "issues": "https://github.com/michelf/php-markdown/issues",
+                "source": "https://github.com/michelf/php-markdown/tree/1.9.0"
+            },
+            "time": "2019-12-02T02:32:27+00:00"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -460,40 +502,44 @@
                 "xls",
                 "xlsx"
             ],
+            "support": {
+                "issues": "https://github.com/PHPOffice/PHPExcel/issues",
+                "source": "https://github.com/PHPOffice/PHPExcel/tree/master"
+            },
             "abandoned": "phpoffice/phpspreadsheet",
             "time": "2018-11-22T23:07:24+00:00"
         },
         {
             "name": "pickles2/lib-px2-contents-editor",
-            "version": "2.0.8",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/node-pickles2-contents-editor.git",
-                "reference": "110f3af127178243e0328738a0dfdcd35e06b7a6"
+                "reference": "e8c2146f6239634920430ff5d30aa843b7f8acc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/110f3af127178243e0328738a0dfdcd35e06b7a6",
-                "reference": "110f3af127178243e0328738a0dfdcd35e06b7a6",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/e8c2146f6239634920430ff5d30aa843b7f8acc9",
+                "reference": "e8c2146f6239634920430ff5d30aa843b7f8acc9",
                 "shasum": ""
             },
             "require": {
-                "broccoli-html-editor/broccoli-field-table": "^0.2",
-                "broccoli-html-editor/broccoli-html-editor": "^0.3",
+                "broccoli-html-editor/broccoli-field-table": "~0.2",
+                "broccoli-html-editor/broccoli-html-editor": "~0.4",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "broccoli-html-editor/broccoli-module-fess": "*",
-                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
+                "broccoli-html-editor/broccoli-module-fess": "dev-develop",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
                 "phpunit/phpunit": "^4.1.0",
-                "pickles2/px-fw-2.x": "*",
-                "pickles2/px2-dec": "*",
-                "pickles2/px2-multitheme": "*",
-                "pickles2/px2-path-resolver": "*",
-                "pickles2/px2-px2dthelper": "*",
-                "pickles2/px2-remove-attr": "*",
-                "pickles2/px2-sitemapexcel": "*",
-                "tomk79/broccoli-module-lp": "dev-develop"
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-dec": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-path-resolver": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
+                "pickles2/px2-remove-attr": "^2.0",
+                "pickles2/px2-sitemapexcel": "^2.0||^2.1",
+                "tomk79/broccoli-module-lp": "^0.1"
             },
             "type": "library",
             "autoload": {
@@ -518,39 +564,42 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-08-11T07:10:52+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/node-pickles2-contents-editor/issues",
+                "source": "https://github.com/pickles2/node-pickles2-contents-editor/tree/2.0.12"
+            },
+            "time": "2021-02-21T00:39:39+00:00"
         },
         {
             "name": "pickles2/lib-px2-module-editor",
-            "version": "0.2.4",
+            "version": "0.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/node-pickles2-module-editor.git",
-                "reference": "9f3154415241866f83d0dc328ec2362f4b7ea4c4"
+                "reference": "3c1af2b6e298f64c5eb9cea261c128ff71cd1331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/node-pickles2-module-editor/zipball/9f3154415241866f83d0dc328ec2362f4b7ea4c4",
-                "reference": "9f3154415241866f83d0dc328ec2362f4b7ea4c4",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-module-editor/zipball/3c1af2b6e298f64c5eb9cea261c128ff71cd1331",
+                "reference": "3c1af2b6e298f64c5eb9cea261c128ff71cd1331",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "pickles2/lib-px2-contents-editor": "^2.0.5",
-                "tomk79/langbank": "^0.0.3",
-                "twig/twig": "^1.35"
+                "pickles2/lib-px2-contents-editor": "~2.0",
+                "tomk79/langbank": "~0.0.4"
             },
             "require-dev": {
-                "broccoli-html-editor/broccoli-module-fess": "dev-develop",
-                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
-                "phpunit/phpunit": "^4.1.0",
-                "pickles2/px-fw-2.x": "dev-develop",
-                "pickles2/px2-dec": "dev-master",
-                "pickles2/px2-multitheme": "dev-develop",
-                "pickles2/px2-path-resolver": "dev-develop",
-                "pickles2/px2-px2dthelper": "^2.0.7",
-                "pickles2/px2-remove-attr": "dev-develop",
-                "pickles2/px2-sitemapexcel": "dev-develop"
+                "broccoli-html-editor/broccoli-module-fess": "*",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
+                "phpunit/phpunit": "~4.8.0",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-dec": "~2.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-path-resolver": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0.16",
+                "pickles2/px2-remove-attr": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0||~2.1"
             },
             "type": "library",
             "autoload": {
@@ -573,55 +622,116 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-08-12T03:13:30+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/node-pickles2-module-editor/issues",
+                "source": "https://github.com/pickles2/node-pickles2-module-editor/tree/0.2.8"
+            },
+            "time": "2021-02-21T01:22:09+00:00"
         },
         {
-            "name": "pickles2/px-fw-2.x",
-            "version": "2.0.42",
+            "name": "pickles2/lib-px2-theme-editor",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pickles2/px-fw-2.x.git",
-                "reference": "4f7ac7ee4b302608c13eebd4263ebac9ef5affa8"
+                "url": "https://github.com/pickles2/pickles2-theme-editor.git",
+                "reference": "143b28d5b1c9d775e88958b5467cab9e030e255a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/4f7ac7ee4b302608c13eebd4263ebac9ef5affa8",
-                "reference": "4f7ac7ee4b302608c13eebd4263ebac9ef5affa8",
+                "url": "https://api.github.com/repos/pickles2/pickles2-theme-editor/zipball/143b28d5b1c9d775e88958b5467cab9e030e255a",
+                "reference": "143b28d5b1c9d775e88958b5467cab9e030e255a",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "ext-mbstring": "*",
-                "ext-pdo": "*",
-                "ext-pdo_sqlite": "*",
-                "leafo/scssphp": "^0.7.0",
-                "michelf/php-markdown": "^1.6.0",
                 "php": ">=5.4.0",
-                "tomk79/filesystem": "^1.0.0",
-                "tomk79/request": "^1.0.0"
+                "pickles2/px2agent": "^0.0",
+                "tomk79/filesystem": "^1.0",
+                "tomk79/langbank": "^0.0.4"
             },
             "require-dev": {
-                "jms/serializer": "<1.8",
-                "phpdocumentor/phpdocumentor": "^2.9.0",
-                "phpunit/phpunit": "^4.1.0"
+                "phpunit/phpunit": "^4.1.0",
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-dec": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-path-resolver": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
+                "pickles2/px2-remove-attr": "^2.0",
+                "pickles2/px2-sitemapexcel": "^2.0||^2.1"
             },
             "type": "library",
             "autoload": {
                 "files": [
-                    "px-files/_sys/php/pickles.php",
-                    "px-files/_sys/php/px.php",
-                    "px-files/_sys/php/bowl.php",
-                    "px-files/_sys/php/pxcmd.php",
-                    "px-files/_sys/php/site.php",
-                    "px-files/_sys/php/commands/api.php",
-                    "px-files/_sys/php/commands/clearcache.php",
-                    "px-files/_sys/php/commands/config.php",
-                    "px-files/_sys/php/commands/phpinfo.php",
-                    "px-files/_sys/php/commands/publish.php",
-                    "px-files/_sys/php/processors/md.php",
-                    "px-files/_sys/php/processors/scss.php",
-                    "px-files/_sys/php/processors/autoindex.php",
-                    "px-files/_sys/php/processors/encodingconverter.php",
-                    "px-files/_sys/php/processors/ssi.php",
+                    "php/main.php",
+                    "php/gpi.php",
+                    "php/configEditor.php",
+                    "php/themeCollection.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/pickles2-theme-editor/issues",
+                "source": "https://github.com/pickles2/pickles2-theme-editor/tree/0.0.2"
+            },
+            "time": "2021-02-21T00:26:42+00:00"
+        },
+        {
+            "name": "pickles2/px-fw-2.x",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px-fw-2.x.git",
+                "reference": "fc476ab7e046a382641b2be8a35b16f5e413ea2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/fc476ab7e046a382641b2be8a35b16f5e413ea2d",
+                "reference": "fc476ab7e046a382641b2be8a35b16f5e413ea2d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "ext-pdo_sqlite": "*",
+                "leafo/scssphp": "~0.7",
+                "michelf/php-markdown": "~1.6",
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "~1.0",
+                "tomk79/request": "~1.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "~3.0.0",
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/pickles.php",
+                    "php/px.php",
+                    "php/bowl.php",
+                    "php/pxcmd.php",
+                    "php/site.php",
+                    "php/commands/api.php",
+                    "php/commands/clearcache.php",
+                    "php/commands/config.php",
+                    "php/commands/phpinfo.php",
+                    "php/commands/publish.php",
+                    "php/processors/md.php",
+                    "php/processors/scss.php",
+                    "php/processors/autoindex.php",
+                    "php/processors/encodingconverter.php",
+                    "php/processors/ssi.php",
                     "px-files/themes/pickles2/php/theme.php"
                 ]
             },
@@ -640,7 +750,11 @@
                 "pickles",
                 "pickles2"
             ],
-            "time": "2019-09-04T11:46:16+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/px-fw-2.x/issues",
+                "source": "https://github.com/pickles2/px-fw-2.x/tree/2.1.1"
+            },
+            "time": "2021-02-21T12:44:30+00:00"
         },
         {
             "name": "pickles2/px2-dec",
@@ -687,6 +801,10 @@
             "keywords": [
                 "pickles2"
             ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-dec/issues",
+                "source": "https://github.com/pickles2/px2-dec/tree/2.0.2"
+            },
             "time": "2019-09-10T05:12:53+00:00"
         },
         {
@@ -741,6 +859,10 @@
             "keywords": [
                 "pickles2"
             ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-multitheme/issues",
+                "source": "https://github.com/pickles2/px2-multitheme/tree/release-2.0.6"
+            },
             "time": "2018-08-22T13:50:55+00:00"
         },
         {
@@ -749,12 +871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-paprika.git",
-                "reference": "ec23a0d8f73c95b507c80c691ea6d505242762a1"
+                "reference": "d4404323d1af05c513f80a33d4f69fbf79cb4291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/ec23a0d8f73c95b507c80c691ea6d505242762a1",
-                "reference": "ec23a0d8f73c95b507c80c691ea6d505242762a1",
+                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/d4404323d1af05c513f80a33d4f69fbf79cb4291",
+                "reference": "d4404323d1af05c513f80a33d4f69fbf79cb4291",
                 "shasum": ""
             },
             "require": {
@@ -797,20 +919,24 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-11-28T14:21:58+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/px2-paprika/issues",
+                "source": "https://github.com/pickles2/px2-paprika/tree/0.3.1"
+            },
+            "time": "2020-01-18T03:13:54+00:00"
         },
         {
             "name": "pickles2/px2-path-resolver",
-            "version": "2.0.13",
+            "version": "2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-path-resolver.git",
-                "reference": "14d3adbe6248d1be302b82fa6f7df7a59629c36d"
+                "reference": "241060a49559c4ea91be48786d9d15b8bccc3273"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-path-resolver/zipball/14d3adbe6248d1be302b82fa6f7df7a59629c36d",
-                "reference": "14d3adbe6248d1be302b82fa6f7df7a59629c36d",
+                "url": "https://api.github.com/repos/pickles2/px2-path-resolver/zipball/241060a49559c4ea91be48786d9d15b8bccc3273",
+                "reference": "241060a49559c4ea91be48786d9d15b8bccc3273",
                 "shasum": ""
             },
             "require": {
@@ -821,8 +947,8 @@
                 "phpunit/phpunit": "4.1.*",
                 "pickles2/broccoli-module-fess": "dev-master",
                 "pickles2/broccoli-module-plain-html-elements": "dev-master",
-                "pickles2/px-fw-2.x": "dev-master",
-                "pickles2/px2-px2dthelper": "dev-master",
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
                 "pickles2/px2-sitemapexcel": "2.*"
             },
             "type": "library",
@@ -848,20 +974,24 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-09-04T12:37:20+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/px2-path-resolver/issues",
+                "source": "https://github.com/pickles2/px2-path-resolver/tree/2.0.14"
+            },
+            "time": "2020-10-17T13:20:05+00:00"
         },
         {
             "name": "pickles2/px2-publish-ex",
-            "version": "2.0.4",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-publish-ex.git",
-                "reference": "57bfd888b0338f5c27235237a1e7b31627890ee2"
+                "reference": "a5af860cc11fed27303861db1ae553ff0657f4a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-publish-ex/zipball/57bfd888b0338f5c27235237a1e7b31627890ee2",
-                "reference": "57bfd888b0338f5c27235237a1e7b31627890ee2",
+                "url": "https://api.github.com/repos/pickles2/px2-publish-ex/zipball/a5af860cc11fed27303861db1ae553ff0657f4a6",
+                "reference": "a5af860cc11fed27303861db1ae553ff0657f4a6",
                 "shasum": ""
             },
             "require-dev": {
@@ -877,6 +1007,7 @@
                     "php/device_target_path.php",
                     "php/path_resolver.php",
                     "php/path_rewriter.php",
+                    "php/vendor_dir.php",
                     "php/publish.php",
                     "php/tmp_publish_dir.php",
                     "php/simple_html_dom.php"
@@ -896,41 +1027,45 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-09-04T12:24:26+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/px2-publish-ex/issues",
+                "source": "https://github.com/pickles2/px2-publish-ex/tree/develop"
+            },
+            "time": "2020-04-04T00:38:21+00:00"
         },
         {
             "name": "pickles2/px2-px2dthelper",
-            "version": "2.0.13",
+            "version": "2.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-px2dthelper.git",
-                "reference": "906deceff5b9c0a2ce422838c0ea53d01175ece1"
+                "reference": "98c0707adaa56ae134c3c112dd922e5eb68b2d32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-px2dthelper/zipball/906deceff5b9c0a2ce422838c0ea53d01175ece1",
-                "reference": "906deceff5b9c0a2ce422838c0ea53d01175ece1",
+                "url": "https://api.github.com/repos/pickles2/px2-px2dthelper/zipball/98c0707adaa56ae134c3c112dd922e5eb68b2d32",
+                "reference": "98c0707adaa56ae134c3c112dd922e5eb68b2d32",
                 "shasum": ""
             },
             "require": {
-                "broccoli-html-editor/broccoli-html-editor": "^0.3",
-                "leafo/scssphp": ">=0.7",
-                "michelf/php-markdown": ">=1.6",
+                "broccoli-html-editor/broccoli-html-editor": "~0.4",
+                "leafo/scssphp": "~0.7",
+                "michelf/php-markdown": "~1.6",
                 "php": ">=5.4.0",
-                "pickles2/lib-px2-contents-editor": "^2.0",
-                "pickles2/lib-px2-module-editor": "^0.2",
-                "tomk79/php-excel2html": "^0.0"
+                "pickles2/lib-px2-contents-editor": "~2.0",
+                "pickles2/lib-px2-module-editor": "~0.2",
+                "pickles2/lib-px2-theme-editor": "~0.0",
+                "tomk79/php-excel2html": "^0.0.8||~0.1"
             },
             "require-dev": {
-                "broccoli-html-editor/broccoli-module-fess": "dev-develop",
-                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
-                "jms/serializer": "<1.8",
+                "broccoli-html-editor/broccoli-module-fess": "*",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
                 "phpdocumentor/phpdocumentor": "^2.9.0",
-                "phpunit/phpunit": "^4.1.0",
-                "pickles2/px-fw-2.x": "dev-develop",
-                "pickles2/px2-multitheme": "dev-develop",
-                "pickles2/px2-sitemapexcel": "dev-develop",
-                "tomk79/filesystem": "^1.0.0"
+                "phpunit/phpunit": "^4.8.0",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0",
+                "tomk79/filesystem": "~1.0.0"
             },
             "type": "library",
             "autoload": {
@@ -938,7 +1073,8 @@
                     "php/main.php",
                     "php/broccoli/receive_message.php",
                     "php/px2ce/apis.php",
-                    "php/px2me/apis.php"
+                    "php/px2me/apis.php",
+                    "php/px2te/apis.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -955,7 +1091,11 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-09-04T11:55:34+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/px2-px2dthelper/issues",
+                "source": "https://github.com/pickles2/px2-px2dthelper/tree/2.0.18"
+            },
+            "time": "2021-02-21T12:50:54+00:00"
         },
         {
             "name": "pickles2/px2-remove-attr",
@@ -1002,20 +1142,24 @@
             "keywords": [
                 "pickles"
             ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-remove-attr/issues",
+                "source": "https://github.com/pickles2/px2-remove-attr/tree/2.0.3"
+            },
             "time": "2019-09-10T05:16:42+00:00"
         },
         {
             "name": "pickles2/px2-sitemapexcel",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-sitemapexcel.git",
-                "reference": "5ba654fcc4fc25a2aef2f409cabee5c1a7da6aa1"
+                "reference": "34856f7694d3aff864086b36bb1b7071400e7666"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-sitemapexcel/zipball/5ba654fcc4fc25a2aef2f409cabee5c1a7da6aa1",
-                "reference": "5ba654fcc4fc25a2aef2f409cabee5c1a7da6aa1",
+                "url": "https://api.github.com/repos/pickles2/px2-sitemapexcel/zipball/34856f7694d3aff864086b36bb1b7071400e7666",
+                "reference": "34856f7694d3aff864086b36bb1b7071400e7666",
                 "shasum": ""
             },
             "require": {
@@ -1024,8 +1168,8 @@
                 "tomk79/filesystem": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.1.*",
-                "pickles2/px-fw-2.x": "dev-develop"
+                "phpunit/phpunit": "^4.8.0",
+                "pickles2/px-fw-2.x": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -1058,7 +1202,64 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-05-21T07:09:29+00:00"
+            "support": {
+                "issues": "https://github.com/pickles2/px2-sitemapexcel/issues",
+                "source": "https://github.com/pickles2/px2-sitemapexcel/tree/2.0.12"
+            },
+            "time": "2020-06-21T06:30:53+00:00"
+        },
+        {
+            "name": "pickles2/px2agent",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/php-px2agent.git",
+                "reference": "9fbbfcc38395f9db8a1e04a86a5ef09ddb726ebf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/php-px2agent/zipball/9fbbfcc38395f9db8a1e04a86a5ef09ddb726ebf",
+                "reference": "9fbbfcc38395f9db8a1e04a86a5ef09ddb726ebf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "~1.0",
+                "tomk79/request": "~1.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.9.0",
+                "phpunit/phpunit": "~4.1",
+                "pickles2/px-fw-2.x": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/px2agent.php",
+                    "php/px2project.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 と PHP スクリプトを仲介するAPIを提供します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/php-px2agent/issues",
+                "source": "https://github.com/pickles2/php-px2agent/tree/0.0.3"
+            },
+            "time": "2021-01-16T11:36:17+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1108,6 +1309,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -1148,24 +1352,28 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.13.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
-                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -1173,7 +1381,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.13-dev"
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -1206,20 +1418,364 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-11-27T13:56:44+00:00"
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
-            "name": "tomk79/broccoli-module-interact",
-            "version": "0.1.0",
+            "name": "symfony/polyfill-intl-idn",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tomk79/broccoli-module-interact.git",
-                "reference": "e9af7a7ee02f20b77a56c46a3c506bfd5acfc4d9"
+                "url": "https://github.com/symfony/polyfill-intl-idn.git",
+                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-interact/zipball/e9af7a7ee02f20b77a56c46a3c506bfd5acfc4d9",
-                "reference": "e9af7a7ee02f20b77a56c46a3c506bfd5acfc4d9",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/2d63434d922daf7da8dd863e7907e67ee3031483",
+                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "symfony/polyfill-intl-normalizer": "^1.10",
+                "symfony/polyfill-php72": "^1.10"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Bassin",
+                    "email": "laurent@bassin.info"
+                },
+                {
+                    "name": "Trevor Rowbotham",
+                    "email": "trevor.rowbotham@pm.me"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "idn",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
+        },
+        {
+            "name": "symfony/polyfill-intl-normalizer",
+            "version": "v1.22.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/43a0283138253ed1d48d352ab6d0bdb3f809f248",
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's Normalizer class and related functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "intl",
+                "normalizer",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.22.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.22.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9",
+                "reference": "cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
+        },
+        {
+            "name": "tomk79/broccoli-module-interact",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/broccoli-module-interact.git",
+                "reference": "c3086d89eee4036916b753f2e0266f082cd72719"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-interact/zipball/c3086d89eee4036916b753f2e0266f082cd72719",
+                "reference": "c3086d89eee4036916b753f2e0266f082cd72719",
                 "shasum": ""
             },
             "require": {
@@ -1229,7 +1785,7 @@
                 "pickles2/px-fw-2.x": "^2.0",
                 "pickles2/px2-multitheme": "^2.0",
                 "pickles2/px2-px2dthelper": "^2.0",
-                "tomk79/broccoli-module-std-document": "dev-develop"
+                "tomk79/broccoli-module-std-document": "^0.1"
             },
             "type": "library",
             "autoload": {
@@ -1249,20 +1805,24 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-09T15:56:49+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/broccoli-module-interact/issues",
+                "source": "https://github.com/tomk79/broccoli-module-interact/tree/0.1.2"
+            },
+            "time": "2020-12-19T05:20:55+00:00"
         },
         {
             "name": "tomk79/broccoli-module-lp",
-            "version": "0.1.0",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-lp.git",
-                "reference": "013751e73c3aa0917687466d038fef78ea325d4d"
+                "reference": "68232c1845f1fb726c82fed12619c1557ff8de9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/013751e73c3aa0917687466d038fef78ea325d4d",
-                "reference": "013751e73c3aa0917687466d038fef78ea325d4d",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/68232c1845f1fb726c82fed12619c1557ff8de9c",
+                "reference": "68232c1845f1fb726c82fed12619c1557ff8de9c",
                 "shasum": ""
             },
             "require": {
@@ -1272,7 +1832,7 @@
                 "pickles2/px-fw-2.x": "^2.0",
                 "pickles2/px2-multitheme": "^2.0",
                 "pickles2/px2-px2dthelper": "^2.0",
-                "tomk79/broccoli-module-std-document": "dev-develop"
+                "tomk79/broccoli-module-std-document": "^0.1"
             },
             "type": "library",
             "autoload": {
@@ -1294,7 +1854,11 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-09T17:55:30+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/broccoli-module-lp/issues",
+                "source": "https://github.com/tomk79/broccoli-module-lp/tree/0.1.3"
+            },
+            "time": "2020-06-07T04:40:28+00:00"
         },
         {
             "name": "tomk79/broccoli-module-medias",
@@ -1337,20 +1901,24 @@
                 "broccoli",
                 "pickles2"
             ],
+            "support": {
+                "issues": "https://github.com/tomk79/broccoli-module-medias/issues",
+                "source": "https://github.com/tomk79/broccoli-module-medias/tree/0.1.0"
+            },
             "time": "2019-07-09T18:54:15+00:00"
         },
         {
             "name": "tomk79/broccoli-module-std-document",
-            "version": "0.1.2",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-std-document.git",
-                "reference": "c8f56806c7ff3718b4ef737e96232d989f9dd450"
+                "reference": "adad6c5eb032035d9bbd4837e5e005f89aa0d66a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/c8f56806c7ff3718b4ef737e96232d989f9dd450",
-                "reference": "c8f56806c7ff3718b4ef737e96232d989f9dd450",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/adad6c5eb032035d9bbd4837e5e005f89aa0d66a",
+                "reference": "adad6c5eb032035d9bbd4837e5e005f89aa0d66a",
                 "shasum": ""
             },
             "require": {
@@ -1379,28 +1947,32 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-10-09T11:49:15+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/broccoli-module-std-document/issues",
+                "source": "https://github.com/tomk79/broccoli-module-std-document/tree/0.1.5"
+            },
+            "time": "2020-04-04T02:18:29+00:00"
         },
         {
             "name": "tomk79/filesystem",
-            "version": "1.0.8",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/filesystem.git",
-                "reference": "4f4db2af2ebcb1aad29a5bdf6ba5f7349f776aea"
+                "reference": "68b35d6d5808c46a46673bd1440aa6d09677ce3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/filesystem/zipball/4f4db2af2ebcb1aad29a5bdf6ba5f7349f776aea",
-                "reference": "4f4db2af2ebcb1aad29a5bdf6ba5f7349f776aea",
+                "url": "https://api.github.com/repos/tomk79/filesystem/zipball/68b35d6d5808c46a46673bd1440aa6d09677ce3d",
+                "reference": "68b35d6d5808c46a46673bd1440aa6d09677ce3d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpdocumentor/phpdocumentor": "2.8.*",
-                "phpunit/phpunit": "4.1.*"
+                "phpdocumentor/phpdocumentor": "^2.8.0",
+                "phpunit/phpunit": "^4.1.0"
             },
             "type": "library",
             "autoload": {
@@ -1416,27 +1988,31 @@
                 {
                     "name": "Tomoya Koyanagi",
                     "email": "tomk79@gmail.com",
-                    "homepage": "http://www.pxt.jp/"
+                    "homepage": "https://www.pxt.jp/"
                 }
             ],
             "description": "Simple filesystem utility for PHP.",
             "keywords": [
                 "filesystem"
             ],
-            "time": "2018-08-16T01:56:20+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/filesystem/issues",
+                "source": "https://github.com/tomk79/filesystem/tree/1.0.11"
+            },
+            "time": "2020-10-17T13:46:31+00:00"
         },
         {
             "name": "tomk79/langbank",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/node-langbank.git",
-                "reference": "bf87f84f697c92dd02e887b973ba7b18e013aedd"
+                "reference": "d5363d3d878660a0aa1516f51d5cd8a30231c9d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/node-langbank/zipball/bf87f84f697c92dd02e887b973ba7b18e013aedd",
-                "reference": "bf87f84f697c92dd02e887b973ba7b18e013aedd",
+                "url": "https://api.github.com/repos/tomk79/node-langbank/zipball/d5363d3d878660a0aa1516f51d5cd8a30231c9d3",
+                "reference": "d5363d3d878660a0aa1516f51d5cd8a30231c9d3",
                 "shasum": ""
             },
             "require": {
@@ -1466,30 +2042,34 @@
             "keywords": [
                 "i18n"
             ],
-            "time": "2018-05-23T17:43:08+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/node-langbank/issues",
+                "source": "https://github.com/tomk79/node-langbank/tree/0.0.4"
+            },
+            "time": "2019-12-29T23:21:22+00:00"
         },
         {
             "name": "tomk79/php-excel2html",
-            "version": "0.0.7",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/php-excel2html.git",
-                "reference": "70c019f6c8582b15b6114803d5e97f42393baf2d"
+                "reference": "822626596b91a7f853b72975f55eb8d1c604d4de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/php-excel2html/zipball/70c019f6c8582b15b6114803d5e97f42393baf2d",
-                "reference": "70c019f6c8582b15b6114803d5e97f42393baf2d",
+                "url": "https://api.github.com/repos/tomk79/php-excel2html/zipball/822626596b91a7f853b72975f55eb8d1c604d4de",
+                "reference": "822626596b91a7f853b72975f55eb8d1c604d4de",
                 "shasum": ""
             },
             "require": {
-                "michelf/php-markdown": "^1.6.0",
+                "michelf/php-markdown": ">=1.6.0",
                 "php": ">=5.3.0",
-                "phpoffice/phpexcel": "1.8.*",
+                "phpoffice/phpexcel": "^1.8",
                 "tomk79/filesystem": "1.*"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "^4.8.0"
             },
             "type": "library",
             "autoload": {
@@ -1508,20 +2088,24 @@
                 }
             ],
             "description": "Convert Excel(*.xlsx) to HTML table. with PHPExcel.",
-            "time": "2016-10-18T08:03:45+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/php-excel2html/issues",
+                "source": "https://github.com/tomk79/php-excel2html/tree/0.0.8"
+            },
+            "time": "2020-06-11T04:02:18+00:00"
         },
         {
             "name": "tomk79/request",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/request.git",
-                "reference": "8fcec933e62dcc08b59f0659db5dcaf0d56186bd"
+                "reference": "fb9120babe4eba8daba947d74101f677d970e85b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/request/zipball/8fcec933e62dcc08b59f0659db5dcaf0d56186bd",
-                "reference": "8fcec933e62dcc08b59f0659db5dcaf0d56186bd",
+                "url": "https://api.github.com/repos/tomk79/request/zipball/fb9120babe4eba8daba947d74101f677d970e85b",
+                "reference": "fb9120babe4eba8daba947d74101f677d970e85b",
                 "shasum": ""
             },
             "require": {
@@ -1549,41 +2133,42 @@
                 }
             ],
             "description": "A request management utilitiy for PHP.",
-            "time": "2018-08-22T09:51:53+00:00"
+            "support": {
+                "issues": "https://github.com/tomk79/request/issues",
+                "source": "https://github.com/tomk79/request/tree/1.1.0"
+            },
+            "time": "2020-06-21T05:22:44+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v1.42.4",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e587180584c3d2d6cb864a0454e777bb6dcb6152"
+                "reference": "1f3b7e2c06cc05d42936a8ad508ff1db7975cdc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e587180584c3d2d6cb864a0454e777bb6dcb6152",
-                "reference": "e587180584c3d2d6cb864a0454e777bb6dcb6152",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1f3b7e2c06cc05d42936a8ad508ff1db7975cdc5",
+                "reference": "1f3b7e2c06cc05d42936a8ad508ff1db7975cdc5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0",
-                "symfony/polyfill-ctype": "^1.8"
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "^3.4|^4.2",
-                "symfony/phpunit-bridge": "^4.4@dev|^5.0"
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.42-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                },
                 "psr-4": {
                     "Twig\\": "src/"
                 }
@@ -1601,7 +2186,6 @@
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "https://twig.symfony.com/contributors",
                     "role": "Contributors"
                 },
                 {
@@ -1615,42 +2199,51 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-11-11T16:49:32+00:00"
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v3.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-08T09:54:36+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "ae466f726242e637cebdd526a7d991b9433bacf1"
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/ae466f726242e637cebdd526a7d991b9433bacf1",
-                "reference": "ae466f726242e637cebdd526a7d991b9433bacf1",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpbench/phpbench": "^0.13",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpunit/phpunit": "^7.0"
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -1664,7 +2257,7 @@
                 {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
+                    "homepage": "https://ocramius.github.io/"
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
@@ -1673,32 +2266,47 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2019-10-21T16:45:58+00:00"
+            "support": {
+                "issues": "https://github.com/doctrine/instantiator/issues",
+                "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-10T18:47:58+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "2.0.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
-                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-2.x": "2.x-dev"
                 }
             },
             "autoload": {
@@ -1725,44 +2333,45 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2018-08-07T13:53:10+00:00"
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
+            },
+            "time": "2020-06-27T09:03:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.2",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e"
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
-                "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
-                "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
-                "webmozart/assert": "^1.0"
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "doctrine/instantiator": "^1.0.5",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.4"
+                "mockery/mockery": "~1.3.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-master": "5.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1773,38 +2382,44 @@
                 {
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
+                },
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "account@ijaap.nl"
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2019-09-12T14:27:41+00:00"
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+            },
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.0.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
-                "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": "^7.2 || ^8.0",
                 "phpdocumentor/reflection-common": "^2.0"
             },
             "require-dev": {
-                "ext-tokenizer": "^7.1",
-                "mockery/mockery": "~1",
-                "phpunit/phpunit": "^7.0"
+                "ext-tokenizer": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-1.x": "1.x-dev"
                 }
             },
             "autoload": {
@@ -1823,37 +2438,41 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2019-08-22T18:11:29+00:00"
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.4.0"
+            },
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.9.0",
+            "version": "v1.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "f6811d96d97bdf400077a0cc100ae56aa32b9203"
+                "reference": "451c3cd1418cf640de218914901e51b064abb093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/f6811d96d97bdf400077a0cc100ae56aa32b9203",
-                "reference": "f6811d96d97bdf400077a0cc100ae56aa32b9203",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/451c3cd1418cf640de218914901e51b064abb093",
+                "reference": "451c3cd1418cf640de218914901e51b064abb093",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
                 "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0|^5.0",
-                "sebastian/comparator": "^1.1|^2.0|^3.0",
-                "sebastian/recursion-context": "^1.0|^2.0|^3.0"
+                "sebastian/comparator": "^1.2.3|^2.0|^3.0|^4.0",
+                "sebastian/recursion-context": "^1.0|^2.0|^3.0|^4.0"
             },
             "require-dev": {
-                "phpspec/phpspec": "^2.5|^3.2",
+                "phpspec/phpspec": "^2.5 || ^3.2",
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -1886,7 +2505,11 @@
                 "spy",
                 "stub"
             ],
-            "time": "2019-10-03T11:07:50+00:00"
+            "support": {
+                "issues": "https://github.com/phpspec/prophecy/issues",
+                "source": "https://github.com/phpspec/prophecy/tree/v1.10.3"
+            },
+            "time": "2020-03-05T15:02:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1948,6 +2571,11 @@
                 "testing",
                 "xunit"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.net/phpunit",
+                "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/2.2"
+            },
             "time": "2015-10-06T15:47:00+00:00"
         },
         {
@@ -1995,6 +2623,11 @@
                 "filesystem",
                 "iterator"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.net/phpunit",
+                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/1.4.5"
+            },
             "time": "2017-11-27T13:52:08+00:00"
         },
         {
@@ -2036,6 +2669,10 @@
             "keywords": [
                 "template"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
+            },
             "time": "2015-06-21T13:50:34+00:00"
         },
         {
@@ -2085,6 +2722,10 @@
             "keywords": [
                 "timer"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
+                "source": "https://github.com/sebastianbergmann/php-timer/tree/master"
+            },
             "time": "2017-02-26T11:10:40+00:00"
         },
         {
@@ -2134,6 +2775,11 @@
             "keywords": [
                 "tokenizer"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
+                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/1.4"
+            },
+            "abandoned": true,
             "time": "2017-12-04T08:55:13+00:00"
         },
         {
@@ -2206,6 +2852,10 @@
                 "testing",
                 "xunit"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/phpunit/issues",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/4.8.36"
+            },
             "time": "2017-06-21T08:07:12+00:00"
         },
         {
@@ -2262,6 +2912,11 @@
                 "mock",
                 "xunit"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.net/phpunit",
+                "issues": "https://github.com/sebastianbergmann/phpunit-mock-objects/issues",
+                "source": "https://github.com/sebastianbergmann/phpunit-mock-objects/tree/2.3"
+            },
             "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
@@ -2327,6 +2982,10 @@
                 "compare",
                 "equality"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/comparator/issues",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/1.2"
+            },
             "time": "2017-01-29T09:50:25+00:00"
         },
         {
@@ -2379,6 +3038,10 @@
             "keywords": [
                 "diff"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "source": "https://github.com/sebastianbergmann/diff/tree/1.4"
+            },
             "time": "2017-05-22T07:24:03+00:00"
         },
         {
@@ -2429,6 +3092,10 @@
                 "environment",
                 "hhvm"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/environment/issues",
+                "source": "https://github.com/sebastianbergmann/environment/tree/1.3"
+            },
             "time": "2016-08-18T05:49:44+00:00"
         },
         {
@@ -2496,6 +3163,10 @@
                 "export",
                 "exporter"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/exporter/issues",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/master"
+            },
             "time": "2016-06-17T09:04:28+00:00"
         },
         {
@@ -2547,6 +3218,10 @@
             "keywords": [
                 "global state"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/global-state/issues",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/1.1.1"
+            },
             "time": "2015-10-12T03:26:01+00:00"
         },
         {
@@ -2600,6 +3275,10 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/master"
+            },
             "time": "2016-10-03T07:41:43+00:00"
         },
         {
@@ -2635,20 +3314,24 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/version/issues",
+                "source": "https://github.com/sebastianbergmann/version/tree/1.0.6"
+            },
             "time": "2015-06-21T13:59:46+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.35",
+            "version": "v3.4.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "dab657db15207879217fc81df4f875947bf68804"
+                "reference": "88289caa3c166321883f67fe5130188ebbb47094"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/dab657db15207879217fc81df4f875947bf68804",
-                "reference": "dab657db15207879217fc81df4f875947bf68804",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/88289caa3c166321883f67fe5130188ebbb47094",
+                "reference": "88289caa3c166321883f67fe5130188ebbb47094",
                 "shasum": ""
             },
             "require": {
@@ -2665,11 +3348,6 @@
                 "symfony/console": "For validating YAML files using the lint command"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
@@ -2694,28 +3372,46 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-24T15:33:53+00:00"
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v3.4.47"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-24T10:57:07+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.6.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
-                "reference": "573381c0a64f155a0d9a23f4b0c797194805b925"
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/573381c0a64f155a0d9a23f4b0c797194805b925",
-                "reference": "573381c0a64f155a0d9a23f4b0c797194805b925",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0",
+                "php": "^5.3.3 || ^7.0 || ^8.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
-                "vimeo/psalm": "<3.6.0"
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<3.9.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.36 || ^7.5.13"
@@ -2742,7 +3438,11 @@
                 "check",
                 "validate"
             ],
-            "time": "2019-11-24T13:36:37+00:00"
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.9.1"
+            },
+            "time": "2020-07-08T17:02:28+00:00"
         }
     ],
     "aliases": [],
@@ -2755,5 +3455,6 @@
     "platform": {
         "php": ">=5.4.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

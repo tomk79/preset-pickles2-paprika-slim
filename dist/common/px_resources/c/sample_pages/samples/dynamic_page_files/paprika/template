@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>Markdown記法 | Pickles 2 Paprika Slim</title>
-		<meta name="description" content="Markdown言語でコンテンツを編集するサンプルです。" />
+		<title>動的なページ on Paprika | Pickles 2 Paprika Slim</title>
+		<meta name="description" content="PHPコードでHTMLを生成するサンプルです。" />
 		<meta name="keywords" content="実装サンプル, 機能紹介" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -33,62 +33,21 @@
 <div class="theme-layouts theme-layouts--rnavi">
 	<div class="theme-layouts__body">
 		<div class="theme-layouts__content">
-<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><span>Markdown記法</span></li></ul></div>
-<h1>Markdown記法</h1>
+<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><span>動的なページ on Paprika</span></li></ul></div>
+<h1>動的なページ on Paprika</h1>
 
 <div class="contents">
-<p>このコンテンツは、Markdown形式でページを生成するサンプルです。</p>
-
-<p>Pickles Framework で Markdown を使用するには、ファイル名の最後に、拡張子 <code>.md</code> を追加します(例 <code>index.html</code> であれば、<code>index.html.md</code>)。</p>
-
-<p>どのように記述してこのHTMLがつくられているか、コンテンツのソースコードをみて確認してください。</p>
-
-<!-- == autoindex == -->
-<div style="margin:2em 5%; border:1px solid #bbb; padding:1em; background:rgba(124, 124, 124, 0.05); border-radius:5px;">
-<div style="margin:0; padding:0; text-align:center; font-weight:bold;">INDEX</div><ul style="margin:0; padding:0 0 0 2em;"><li style="list-style-type:disc; display:list-item;"><a href="#hash_H2見出しのサンプル">H2見出しのサンプル</a><ul style="margin:0; padding:0 0 0 2em;"><li style="list-style-type:disc; display:list-item;"><a href="#hash_H3見出しのサンプル">H3見出しのサンプル</a><ul style="margin:0; padding:0 0 0 2em;"><li style="list-style-type:disc; display:list-item;"><a href="#hash_H4見出しのサンプル">H4見出しのサンプル</a><ul style="margin:0; padding:0 0 0 2em;"><li style="list-style-type:disc; display:list-item;"><a href="#hash_H5見出しのサンプル">H5見出しのサンプル</a></li></ul></li></ul></li></ul></li><li style="list-style-type:disc; display:list-item;"><a href="#hash_HTMLやPHPコードを埋め込む">HTMLやPHPコードを埋め込む</a></li></ul>
-</div>
-<!-- / == autoindex == -->
-
-
-<span id="hash_H2見出しのサンプル"></span><h2>H2見出しのサンプル</h2>
-
-<span id="hash_H3見出しのサンプル"></span><h3>H3見出しのサンプル</h3>
-
-<span id="hash_H4見出しのサンプル"></span><h4>H4見出しのサンプル</h4>
-
-<span id="hash_H5見出しのサンプル"></span><h5>H5見出しのサンプル</h5>
-
-<ul>
-<li>リストのサンプル</li>
-<li>リストのサンプル</li>
-<li>リストのサンプル</li>
-<li>リストのサンプル</li>
-<li>リストのサンプル</li>
-</ul>
-
-<span id="hash_HTMLやPHPコードを埋め込む"></span><h2>HTMLやPHPコードを埋め込む</h2>
-
-<p>マークダウン記法中に、HTMLやPHPコードを埋め込むことができます。</p>
-
-<p>このテキストは、HTMLを直接書いて表現しています。</p>
-
-<p>このテキストは、直接実装したPHPコードが出力したものです。</p>
-
-<pre><code>&lt;div class="sample"&gt;
-    &lt;p&gt;Markdown でコードを記載するサンプル&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
-<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><span>Markdown記法</span></li></ul></div>
+{$main}</div>
+<div class="theme-breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><span>動的なページ on Paprika</span></li></ul></div>
 		</div>
 		<div class="theme-layouts__rnavi">
 <nav class="theme-common-navi">
 	<p><a href="/sample_pages/samples/">さまざまな機能</a></p>
 <ul>
 <li><a href="/sample_pages/samples/ajax_paprika.html">AJAX on Paprika</a></li>
-<li><a href="/sample_pages/samples/dynamic_page.php">動的なページ on Paprika</a></li>
+<li><a href="/sample_pages/samples/dynamic_page.php" class="current">動的なページ on Paprika</a></li>
 <li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
-<li><a href="/sample_pages/samples/markdown.html" class="current">Markdown記法</a></li>
+<li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
 <li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
 <li><a href="/sample_pages/samples/alias/">エイリアス機能</a></li>
 <li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
@@ -124,9 +83,9 @@
 </li>
 <li><a href="/sample_pages/samples/" class="current">さまざまな機能</a><ul>
 <li><a href="/sample_pages/samples/ajax_paprika.html">AJAX on Paprika</a></li>
-<li><a href="/sample_pages/samples/dynamic_page.php">動的なページ on Paprika</a></li>
+<li><a href="/sample_pages/samples/dynamic_page.php" class="current">動的なページ on Paprika</a></li>
 <li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
-<li><a href="/sample_pages/samples/markdown.html" class="current">Markdown記法</a></li>
+<li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
 <li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
 <li><a href="/sample_pages/samples/alias/">エイリアス機能</a></li>
 <li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
