@@ -72,6 +72,18 @@ ob_start(); ?>
 <h2>$paprika->env()</h2>
 <pre><code><?php var_dump( $paprika->env() ); ?></code></pre>
 
+<h2>変数の取り扱い</h2>
+<?php
+$varStrSample = '変数 $varStrSample に代入した文字列';
+$varIntSample = 100;
+?>
+<ul>
+    <li><?= htmlspecialchars($varStrSample) ?> / <?= htmlspecialchars($varIntSample ++) ?></li>
+    <li><?= htmlspecialchars($varStrSample) ?> / <?= htmlspecialchars($varIntSample ++) ?></li>
+    <li><?= htmlspecialchars($varStrSample) ?> / <?= htmlspecialchars($varIntSample ++) ?></li>
+    <li><?= htmlspecialchars($varStrSample) ?> / <?= htmlspecialchars($varIntSample ++) ?></li>
+</ul>
+
 <?php
 $content .= ob_get_clean();
 
